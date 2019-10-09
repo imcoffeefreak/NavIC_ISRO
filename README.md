@@ -13,7 +13,7 @@
    4. For windows user  downlaod PUTTY software and add your configuration(i.e your IP)
    5. For linux user go to terminal and type
       `ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no ubuntu@ip`
-  ## 6. Call us in case if you get "permission denid"
+  ## 6. Call us in case if you get "permission denied"
    7. if not then you will be prompted with password assess enter the id as "aerophilia"
    8. then type git clone <your url>
    9. cd "udp_trial"

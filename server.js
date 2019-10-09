@@ -1,5 +1,7 @@
+//using express as a server so include express in the app
 var express = require('express');
 
+//creating an instance of the express app
 var app = express();
 
 var dgram = require('dgram');
@@ -50,7 +52,7 @@ server.on('error', (err) => {
 //app.set('port', 80);
 server.bind(13000);
 
-//parsing data from body
+//if you are getting any data from html body enable/uncomment following lines that basically parses data from body
 // var bodyParser = require('body-parser');
 // app.use(bodyParser.urlencoded({
 //     extended: true
@@ -64,6 +66,7 @@ app.get('/', function (req, res) {
     res.render('index.html',{message:message,ts:ts});
 });
 
+//making server to listen at port 80
 app.listen(80, function () { 
     console.log("server is running at localhost:80");
 })
