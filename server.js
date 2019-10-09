@@ -17,6 +17,9 @@ var db = new sqlite3.Database('aerophilia.db', sqlite3.OPEN_READWRITE | sqlite3.
         console.log('Connected to the aerophilia database.');
     });
 
+
+// creating table
+
 try {
     db.run('CREATE TABLE IF NOT EXISTS data(timestamp,value)');
 } catch (e) {
